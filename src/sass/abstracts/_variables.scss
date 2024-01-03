@@ -1,0 +1,44 @@
+// ======================== //
+// Prefixes for class names //
+// ======================== //
+$prefix: "ss-";
+// ========= //
+// Font name //
+// ========= //
+$font-name: "Inter";
+$font-serif: "sans-serif";
+// ============ //
+// Font weights //
+// ============ //
+$font-weight: (
+    "thin": 100,
+    "extralight": 200,
+    "light": 300,
+    "regular": 400,
+    "medium": 500,
+    "semibold": 600,
+    "bold": 700,
+    "extrabold": 800,
+    "blackbold": 900,
+);
+// ====== //
+// Colors //
+// ====== //
+$colors: (
+    "primary": #165757,
+    "secondary": #2b777d,
+    "tint": #A2BCBC,
+    "black": #000000,
+    "darkgray": #343434,
+    "gray": #837f7f,
+    "lightgray": #f7f7f7,
+    "white": #ffffff,
+);
+// ========================== //
+// Device breakpoints (width) //
+// ========================== //
+$breakpoints: (
+    'tablet-sm': 768px,
+    'tablet': 900px,
+    'desktop': 1280px
+);

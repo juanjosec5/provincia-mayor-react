@@ -1,0 +1,21 @@
+// Abstracts
+@use "../abstracts/" as *;
+
+/* ========== */
+/* Typography */
+/* ========== */
+
+// Google Fonts Import
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+/* Standart mobile first typography */
+@include font-sizes(3.2rem, 2.6rem, 2.2rem, 1.8rem, 1rem);
+
+
+@include breakpoint-min('tablet') {
+    @include font-sizes(3.2rem, 2.6rem, 2.2rem, 1.8rem, 1rem);
+}
+
+@include breakpoint-min('desktop') {
+    @include font-sizes(4rem, 3.2rem, 2.4rem, 1.8rem, 1rem);
+}

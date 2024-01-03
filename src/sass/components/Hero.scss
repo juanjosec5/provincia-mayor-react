@@ -1,0 +1,45 @@
+@use '../abstracts' as *;
+
+.main-hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  img, video {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+  &__content.ss-container {
+    transform: translateY(150px);
+    position: relative;
+    margin-left: 10%;
+    color: white;
+
+    p {
+      width: 80%;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    @include breakpoint-min('tablet') {
+      width: 750px;
+    }
+  }
+}

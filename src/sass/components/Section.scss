@@ -1,0 +1,10 @@
+@use '../abstracts/' as *;
+
+.section {
+  padding: 2.5rem 0;
+
+  h2 {
+    color: get-color(primary);
+    margin-bottom: 2rem;
+  }
+}

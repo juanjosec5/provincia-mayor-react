@@ -1,0 +1,116 @@
+@use "functions" as *;
+
+// ============= //
+// Media Queries //
+// ============= //
+
+// Min-width breakpoint
+@mixin breakpoint-min($size) {
+    $size: get-breakpoint($size);
+
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}
+// Max-width breakpoint
+@mixin breakpoint-max($size) {
+    $size: get-breakpoint($size);
+
+    @media only screen and (max-width: $size) {
+        @content;
+    }
+}
+// Min and Max width breakpoint
+@mixin breakpoint-between($size-min, $size-max) {
+    $size-min: get-breakpoint($size-min);
+    $size-max: get-breakpoint($size-max);
+
+    @media only screen and (min-width: $size-min) and (max-width: $size-max) {
+        @content;
+    }
+}
+
+// ========== //
+// Font sizes //
+// ========== //
+@mixin font-sizes($h1, $h2, $h3, $h4, $p) {
+    $font-sizes: (
+        "h1": $h1,
+        "h2": $h2,
+        "h3": $h3,
+        "h4": $h4,
+        "p": $p,
+    );
+    @each $tag, $size in $font-sizes {
+        @if $tag== "p" {
+            #{$tag},
+            span,
+            strong,
+            label,
+            a,
+            li {
+                font-size: $size;
+            }
+        } @else {
+            #{$tag} {
+                font-size: $size;
+            }
+        }
+    }
+}
+
+// ========= //
+// Font Face //
+// ========= //
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: ttf, $display: swap) {
+    $src: null;
+
+    $extmods: (
+        eot: "?",
+        svg: "#" + str-replace($name, " ", "_"),
+    );
+
+    $formats: (
+        otf: "opentype",
+        ttf: "truetype",
+    );
+
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src, local($name);
+        font-display: $display;
+        line-height: 26px;
+    }
+}
+
+// ==== //
+// Grid //
+// ==== //
+@mixin grid($columns, $rows, $areas, $gap: 0) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-template-rows: $rows;
+    grid-template-areas: $areas;
+    gap: $gap;
+}
+
+// For checkboxes and radio buttons
+@mixin pseudo-elem-checked($location: before, $content: "", $position: relative, $top: 0, $right: 0, $bottom: 0, $left: 0) {
+    &:checked:#{$location} {
+        content: $content;
+        position: $position;
+        top: $top;
+        right: $right;
+        bottom: $bottom;
+        left: $left;
+        @content;
+    }
+}

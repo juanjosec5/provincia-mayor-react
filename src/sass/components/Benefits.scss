@@ -1,0 +1,19 @@
+@use '../abstracts/' as *;
+
+.benefits {
+  .cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    place-content: center;
+    gap: 1.5rem;
+
+    .card {
+      width: 340px;
+    }
+
+    @include breakpoint-min(tablet) {
+      flex-direction: row;
+    }
+  }
+}
