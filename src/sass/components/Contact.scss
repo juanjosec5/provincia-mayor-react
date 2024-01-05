@@ -1,0 +1,51 @@
+@use '../abstracts/' as *;
+
+.contact {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  @include breakpoint-min('tablet-sm') {
+    flex-direction: row;
+    gap: 1.5rem;
+  } 
+
+  .cta-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: get-color(primary);
+    flex: 1 0 50%;
+
+    a {
+      display: grid;
+      place-content: center;
+      width: 100%;
+
+      @include breakpoint-min('tablet-sm') {
+        width: 280px;
+      } 
+    }
+
+    span {
+      display: inline-flex;
+      place-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  .map {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 50%;
+    width: 100%;
+    align-items: center;
+    gap: .5rem;
+
+    iframe {
+      width: 100%;
+    }
+  }
+}

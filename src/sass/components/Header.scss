@@ -17,6 +17,10 @@
 
     .logo {
       width: 100px;
+
+      img {
+        max-width: 100%;
+      }
     }
 
     .overlay {
@@ -152,7 +156,7 @@
         color: get-color(primary);
         
         a {
-          font-weight: 500;
+          font-weight: 600;
           text-decoration: none;
           padding: 1rem .5rem;
           position: relative;

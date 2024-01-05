@@ -1,32 +1,47 @@
 import Card from "@/components/Benefits/Card";
 import Cards from "@/components/Benefits/Cards";
 import Section from "@/components/BaseComponents/Section";
-import img1 from "@/assets/img-1.png";
-import img2 from "@/assets/img-2.png";
+
+import benefit1 from "@/assets/benefits/benefits-1.png";
+import benefit2 from "@/assets/benefits/benefits-2.png";
+import benefit3 from "@/assets/benefits/benefits-3.png";
+import benefit4 from "@/assets/benefits/benefits-4.png";
+import benefit5 from "@/assets/benefits/benefits-5.png";
+import benefit6 from "@/assets/benefits/benefits-6.png";
 
 import "@/sass/components/Benefits.scss";
 
 const Benefits = () => {
   const cardData = [
     {
-      imgPath: img2,
-      title: "card title 1",
-      body: "Lrem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid unde voluptas, nobis deleniti omnis quae rerum nulla illo amet quidem",
+      imgPath: benefit2,
+      title: "Vivienda",
+      body: "Habitaciones individuales con baño privado, espaciosas, cómodas, seguras, con iluminación y ventilación natural. Amplias zonas comúnes y hermosos jardines.",
     },
     {
-      imgPath: img1,
-      title: "card title 2",
-      body: "Lore ipsum, dolor sit amet consectetur adipisicing elit. Aliquid unde voluptas, nobis deleniti omnis quae rerum nulla illo amet quide",
+      imgPath: benefit3,
+      title: "Asistencia y Cuidado Personal",
+      body: "Asistencia en higiene personal, rutina de baño, cambio de vestuario y administración de medicamentos.",
     },
     {
-      imgPath: img2,
-      title: "card title 3",
-      body: "Lorem isum, dolor sit amet consectetur adipisicing elit. Aliquid unde voluptas, nobis deleniti omnis quae rerum nulla illo amet quid",
+      imgPath: benefit4,
+      title: "Preparación de Alimentos y Dietas",
+      body: "Alimentación balanceada, comidas nutritivas y deliciosas. Planificación de dietas especiales.",
     },
     {
-      imgPath: img2,
-      title: "card title 4",
-      body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid unde voluptas, nobis deleniti omnis quae rerum nulla illo amet qui",
+      imgPath: benefit5,
+      title: "Recreación y Socialización",
+      body: "Actividades grupales diarias físicas, lúdicas, intelectuales y espirituales.",
+    },
+    {
+      imgPath: benefit6,
+      title: "Servicio de Limpieza y Lavandería",
+      body: "Limpieza diaria del cuarto y baño. Lavandería de vestuario y ropa de cama.",
+    },
+    {
+      imgPath: benefit1,
+      title: "Club Día y Servicios Adicionales",
+      body: "Disfrute durante el día nuestra programación de actividades con el acompañamiento de personal calificado.",
     },
   ];
 

@@ -45,14 +45,13 @@ ol {
 
 body {
     min-height: 100vh;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     // text-rendering: optimizeSpeed;
     // line-height: 1.5;
 }
 
 img,
 picture {
-    max-width: 100%;
     display: block;
 }
 
@@ -97,4 +96,13 @@ select {
     h1, h2, h3, p, li {
         color: white;
     }
+}
+
+.yarl__container,  .yarl__thumbnails_container {
+    background-color: rgba(black, 0.6);
+    border: none;
+}
+
+.yarl__thumbnails_vignette {
+    display: none;
 }

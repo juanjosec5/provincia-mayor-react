@@ -1,4 +1,4 @@
-const Media = ({ type, path, alt = "", format = "video/webm" }) => {
+const Media = ({ type, path, alt = "", format = "video/webm", ...props }) => {
   return (
     <>
       {type === "image" && typeof path === "object" && (
@@ -7,9 +7,11 @@ const Media = ({ type, path, alt = "", format = "video/webm" }) => {
             if (index === path.length - 1) {
               return (
                 <img
+                  loading="lazy"
                   key={sourceData.path}
                   src={sourceData.path}
                   alt={sourceData.alt}
+                  {...props}
                 />
               );
             } else {
@@ -26,7 +28,7 @@ const Media = ({ type, path, alt = "", format = "video/webm" }) => {
         </picture>
       )}
       {type === "image" && typeof path === "string" && (
-        <img src={path} alt={alt} />
+        <img {...props} loading="lazy" src={path} alt={alt} />
       )}
       {type === "video" && (
         <video>

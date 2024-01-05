@@ -16,6 +16,12 @@ export default function Homepage() {
       <Services />
       <Gallery />
       <Contact />
+      <div className="ss-container">
+        <p className="ss-align-center">
+          Nuestros horarios de atencion son de Lunes a Sabado de 8am a 10pm
+        </p>
+      </div>
+
       {/* <Link to="404">not found</Link> */}
     </>
   );

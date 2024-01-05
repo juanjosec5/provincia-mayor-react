@@ -1,12 +1,12 @@
-import Media from "../BaseComponents/Media.jsx";
+import Media from "@/components/BaseComponents/Media.jsx";
 import "@/sass/components/Hero.scss";
 
-import heroXl from "@/assets/hero-xl.png";
-import heroMd from "@/assets/hero-md.png";
-import heroSm from "@/assets/hero-sm.png";
+import heroXl from "/hero-xl.png";
+import heroMd from "/hero-md.png";
+import heroSm from "/hero-sm.png";
 
 const Hero = () => {
-  const kittenImgs = [
+  const heroImgs = [
     {
       path: heroXl,
       media: "(orientation: landscape)",
@@ -21,7 +21,7 @@ const Hero = () => {
   ];
   return (
     <section className="main-hero">
-      <Media type="image" path={kittenImgs} />
+      <Media type="image" path={heroImgs} />
       <div className="ss-container main-hero__content">
         <h1>Cuidado Profesional</h1>
         <p>
