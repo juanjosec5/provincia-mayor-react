@@ -1,5 +1,4 @@
 import Media from "@/components/BaseComponents/Media";
-import Section from "@/components/BaseComponents/Section";
 import "@/sass/components/Hero.scss";
 
 import heroXl from "/hero-xl.png";

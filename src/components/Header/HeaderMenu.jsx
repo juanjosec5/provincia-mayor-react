@@ -30,9 +30,9 @@ const HeaderMenu = ({ onSelectLink = null, isActive = null }) => {
         {navLinks.map((link, index) => (
           <li key={index}>
             <Link
+              onClick={(event) => handleNavLinkClick(event)}
               tabIndex={tabIndex}
               to={link.link}
-              spy={true}
               smooth={true}
               offset={-70}
             >
