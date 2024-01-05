@@ -15,7 +15,7 @@ const Contact = () => {
   const wapp = "https://api.whatsapp.com/send?phone=573154019699";
   const wappText = 'text="Hola, Me interesa saber mas sobre Provincia Mayor"';
   return (
-    <Section classes="contact">
+    <Section classes="contact" id="contact">
       <div className="cta-wrapper">
         <p>
           <strong>Ponte en contacto directamente con nosotros</strong>

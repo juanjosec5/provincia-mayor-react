@@ -1,19 +1,19 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const HeaderMenu = ({ onSelectLink = null, isActive = null }) => {
   const navLinks = [
     {
       text: "Inicio",
-      link: "#",
+      link: "hero",
     },
     {
-      text: "Sobre nosotros",
-      link: "#",
+      text: "Servicios",
+      link: "services",
     },
     {
-      text: "queremos ayudarte",
-      link: "#test",
+      text: "Galería",
+      link: "gallery",
     },
   ];
 
@@ -29,7 +29,13 @@ const HeaderMenu = ({ onSelectLink = null, isActive = null }) => {
       <ul onClick={handleNavLinkClick}>
         {navLinks.map((link, index) => (
           <li key={index}>
-            <Link tabIndex={tabIndex} to={link.link}>
+            <Link
+              tabIndex={tabIndex}
+              to={link.link}
+              spy={true}
+              smooth={true}
+              offset={-70}
+            >
               {link.text}
             </Link>
           </li>

@@ -58,6 +58,7 @@
           color: get-color(primary);
 
           a {
+            cursor: pointer;
             text-decoration: none;
             font-weight: 600;
           }
@@ -160,6 +161,7 @@
         color: get-color(primary);
         
         a {
+          cursor: pointer;
           font-weight: 600;
           text-decoration: none;
           padding: 1rem .5rem;

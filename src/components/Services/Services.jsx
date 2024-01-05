@@ -31,7 +31,7 @@ const Services = () => {
 
   return (
     <FullBgContainer>
-      <Section title="Nuestros Servicios" classes="services">
+      <Section title="Nuestros Servicios" classes="services" id="services">
         <ServicesList>
           {services.map((s) => (
             <ServicesListItem

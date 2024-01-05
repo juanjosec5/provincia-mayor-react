@@ -1,4 +1,5 @@
-import Media from "@/components/BaseComponents/Media.jsx";
+import Media from "@/components/BaseComponents/Media";
+import Section from "@/components/BaseComponents/Section";
 import "@/sass/components/Hero.scss";
 
 import heroXl from "/hero-xl.png";
@@ -20,7 +21,7 @@ const Hero = () => {
     },
   ];
   return (
-    <section className="main-hero">
+    <section className="main-hero" id="hero">
       <Media type="image" path={heroImgs} />
       <div className="ss-container main-hero__content">
         <h1>Cuidado Profesional</h1>

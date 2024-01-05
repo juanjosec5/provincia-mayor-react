@@ -49,7 +49,7 @@ const Gallery = () => {
   };
 
   return (
-    <Section title="Nuestras Instalaciones">
+    <Section title="Nuestras Instalaciones" id="gallery">
       <GalleryWrapper>
         {thumbnails.map((image, index) => (
           <Media

@@ -46,7 +46,7 @@ const Benefits = () => {
   ];
 
   return (
-    <Section title="Por qu&eacute; escogernos" classes="benefits">
+    <Section title="Por qu&eacute; escogernos" classes="benefits" id="benefits">
       <Cards>
         {cardData.map((card) => (
           <Card
