@@ -137,6 +137,10 @@
 
       .logo {
         width: 120px;
+
+        img {
+          max-width: 100%;
+        }
       }
     }
 
