@@ -36,7 +36,11 @@ const Header = () => {
         <HeaderMenuButton onClick={toggleActiveClass} />
         <MobileDrawer>
           <HeaderMenu onSelectLink={handleLinkSelection} isActive={isActive} />
-          <a href="#contact" className="nav-cta button">
+          <a
+            href="#contact"
+            className="nav-cta button"
+            onClick={handleLinkSelection}
+          >
             contactanos
           </a>
         </MobileDrawer>
@@ -44,7 +48,11 @@ const Header = () => {
       <HeaderNav type="desktop">
         <Logo />
         <HeaderMenu />
-        <a href="#contact" className="nav-cta button">
+        <a
+          href="#contact"
+          className="nav-cta button"
+          onClick={handleLinkSelection}
+        >
           contactanos
         </a>
       </HeaderNav>

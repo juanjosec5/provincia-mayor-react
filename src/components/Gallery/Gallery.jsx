@@ -14,30 +14,27 @@ import { useState, useEffect } from "react";
 const Gallery = () => {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
-  const [images, setImages] = useState([]);
-  const [thumbnails, setThumbnails] = useState([]);
+  const [images, setImages] = useState(0);
+
+  const imageGallery = Object.values(
+    import.meta.glob("@/assets/gallery/*.{png,jpg,jpeg,PNG,JPEG}", {
+      eager: true,
+      as: "url",
+    })
+  );
+
+  const thumbnailGallery = Object.values(
+    import.meta.glob("@/assets/gallery/thumbnails/*.{png,jpg,jpeg,PNG,JPEG}", {
+      eager: true,
+      as: "url",
+    })
+  );
 
   useEffect(() => {
-    const loadImages = async () => {
-      const imagesContext = import.meta.glob("@/assets/gallery/*.png");
-      const thumbnailsContext = import.meta.glob(
-        "@/assets/gallery/thumbnails/*.png"
-      );
+    const loadImages = () => {
+      const galleryImages = imageGallery.map((img) => ({ src: img }));
 
-      const imagesArray = await Promise.all(
-        Object.keys(imagesContext).map((key) => {
-          return { src: key };
-        })
-      );
-
-      const thumbnailsArray = await Promise.all(
-        Object.keys(thumbnailsContext).map((key) => {
-          return key;
-        })
-      );
-
-      setImages(imagesArray);
-      setThumbnails(thumbnailsArray);
+      setImages(galleryImages);
     };
 
     loadImages();
@@ -51,7 +48,7 @@ const Gallery = () => {
   return (
     <Section title="Nuestras Instalaciones" id="gallery">
       <GalleryWrapper>
-        {thumbnails.map((image, index) => (
+        {thumbnailGallery.map((image, index) => (
           <Media
             className="gallery-thumbnail"
             onClick={() => handleOnImageSelect(index)}
