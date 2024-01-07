@@ -1,9 +1,9 @@
 import Media from "@/components/BaseComponents/Media";
 import "@/sass/components/Hero.scss";
 
-import heroXl from "/hero-xl.png";
-import heroMd from "/hero-md.png";
-import heroSm from "/hero-sm.png";
+import heroXl from "@/assets/hero-xl.png";
+import heroMd from "@/assets/hero-md.png";
+import heroSm from "@/assets/hero-sm.png";
 
 const Hero = () => {
   const heroImgs = [
