@@ -28,7 +28,7 @@ const Hero = () => {
           Reunimos un equipo de Cuidadores Calificados con experiencia,
           comprometidos con brindar atencion de la mas alta calidad
         </p>
-        <a className="button" href="#">
+        <a className="button" href="#contact">
           Cont&aacute;ctenos
         </a>
       </div>

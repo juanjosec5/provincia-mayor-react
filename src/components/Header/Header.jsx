@@ -1,13 +1,12 @@
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
 import "../../sass/components/Header.scss";
-
+import Logo from "@/components/BaseComponents/Logo";
 import {
   HeaderMenu,
   HeaderMenuButton,
   HeaderNav,
   HeaderOverlay,
-  Logo,
   MobileDrawer,
 } from ".";
 

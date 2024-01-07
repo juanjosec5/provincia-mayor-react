@@ -2,16 +2,16 @@
 const HeaderMenu = ({ onSelectLink = null, isActive = null }) => {
   const navLinks = [
     {
-      text: "Inicio",
-      link: "#hero",
+      text: "Beneficios",
+      link: "/#benefits",
     },
     {
       text: "Servicios",
-      link: "#services",
+      link: "/#services",
     },
     {
       text: "Galería",
-      link: "#gallery",
+      link: "/#gallery",
     },
   ];
 

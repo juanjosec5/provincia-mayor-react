@@ -6,6 +6,7 @@ import Benefits from "@/components/Benefits/Benefits";
 import Services from "@/components/Services/Services";
 import Gallery from "@/components/Gallery/Gallery";
 import Contact from "@/components/Contact/Contact";
+import Footer from "@/components/Footer/Footer";
 
 export default function Homepage() {
   return (
@@ -16,12 +17,7 @@ export default function Homepage() {
       <Services />
       <Gallery />
       <Contact />
-      <div className="ss-container">
-        <p className="ss-align-center">
-          Nuestros horarios de atencion son de Lunes a Sabado de 8am a 10pm
-        </p>
-      </div>
-
+      <Footer />
       {/* <Link to="404">not found</Link> */}
     </>
   );

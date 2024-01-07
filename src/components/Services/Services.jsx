@@ -2,6 +2,9 @@ import Section from "@/components/BaseComponents/Section";
 import ServicesListItem from "@/components/Services/ServicesListItem";
 import ServicesList from "@/components/Services/ServicesList";
 import FullBgContainer from "@/components/BaseComponents/FullBgContainer";
+
+import { Link } from "react-router-dom";
+
 import Icon from "@mdi/react";
 import { mdiStar } from "@mdi/js";
 
@@ -41,9 +44,9 @@ const Services = () => {
             />
           ))}
         </ServicesList>
-        <a href="#" className="button button--secondary">
+        <Link to="/services" className="button button--secondary">
           Ver m&aacute;s
-        </a>
+        </Link>
       </Section>
     </FullBgContainer>
   );

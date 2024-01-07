@@ -1,7 +1,6 @@
 @use '../abstracts/' as *;
 
 .contact {
-  padding-top: 3rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -48,4 +47,8 @@
       width: 100%;
     }
   }
+}
+
+.ss-container.schedule {
+  margin-top: 2rem;
 }

@@ -15,34 +15,41 @@ const Contact = () => {
   const wapp = "https://api.whatsapp.com/send?phone=573154019699";
   const wappText = 'text="Hola, Me interesa saber mas sobre Provincia Mayor"';
   return (
-    <Section classes="contact" id="contact">
-      <div className="cta-wrapper">
-        <p>
-          <strong>Ponte en contacto directamente con nosotros</strong>
-        </p>
-        <a
-          href={`${wapp}&${wappText}`}
-          className="button"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <span>
-            <Icon path={mdiWhatsapp} size={1} /> Escribenos a whatsapp
-          </span>
-        </a>
-        <a href={`mailto:${email}?${subject}&${body}`} className="button">
-          <span>
-            <Icon path={mdiEmailOutline} size={1} /> Escribenos un correo
-          </span>
-        </a>
+    <Section classes="" id="contact">
+      <div className="contact">
+        <div className="cta-wrapper contact">
+          <p>
+            <strong>Ponte en contacto directamente con nosotros</strong>
+          </p>
+          <a
+            href={`${wapp}&${wappText}`}
+            className="button"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span>
+              <Icon path={mdiWhatsapp} size={1} /> Escribenos a whatsapp
+            </span>
+          </a>
+          <a href={`mailto:${email}?${subject}&${body}`} className="button">
+            <span>
+              <Icon path={mdiEmailOutline} size={1} /> Escribenos un correo
+            </span>
+          </a>
+        </div>
+        <div className="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.8118075974858!2d-76.5463443241868!3d3.3960619515834876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a122a229ac43%3A0x22843018aaf57705!2sProvincia%20Mayor!5e0!3m2!1sen!2sco!4v1704333270276!5m2!1sen!2sco"
+            allowFullScreen=""
+            loading="lazy"
+          ></iframe>
+          <p>Calle 10 66B-100 Cali, Colombia</p>
+        </div>
       </div>
-      <div className="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.8118075974858!2d-76.5463443241868!3d3.3960619515834876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a122a229ac43%3A0x22843018aaf57705!2sProvincia%20Mayor!5e0!3m2!1sen!2sco!4v1704333270276!5m2!1sen!2sco"
-          allowFullScreen=""
-          loading="lazy"
-        ></iframe>
-        <p>Calle 10 66B-100 Cali, Colombia</p>
+      <div className="ss-container schedule">
+        <p className="ss-align-center">
+          Nuestros horarios de atencion son de Lunes a Sabado de 8am a 10pm
+        </p>
       </div>
     </Section>
   );

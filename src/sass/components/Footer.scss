@@ -1,0 +1,28 @@
+@use '../abstracts/' as *; 
+
+.footer {
+  padding: 0 0 2rem 0;
+  .logo {
+    display: block;
+    width: 80px;
+
+    img {
+      width: 100%;
+    }
+
+    margin-bottom: 2rem;
+  }
+
+  &__copy {
+    color: get-color(primary);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;      
+    }
+  }
+}
