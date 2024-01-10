@@ -12,6 +12,10 @@
       width: 30%;
       min-width: 300px;
       flex-shrink: 0;
+
+      img {
+        width: 100%;
+      }
     }
 
     @include breakpoint-min(tablet) {
