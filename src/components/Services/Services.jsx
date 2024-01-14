@@ -2,8 +2,10 @@ import Section from "@/components/BaseComponents/Section";
 import ServicesListItem from "@/components/Services/ServicesListItem";
 import ServicesList from "@/components/Services/ServicesList";
 import FullBgContainer from "@/components/BaseComponents/FullBgContainer";
+import ScrollToTop from "@/utils/scrollToTop";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 
 import Icon from "@mdi/react";
 import { mdiStar } from "@mdi/js";
@@ -44,9 +46,11 @@ const Services = () => {
             />
           ))}
         </ServicesList>
-        <Link to="/services" className="button button--secondary">
-          Ver m&aacute;s
-        </Link>
+        <ScrollToTop>
+          <HashLink to="/services#hero" className="button button--secondary">
+            Ver m&aacute;s
+          </HashLink>
+        </ScrollToTop>
       </Section>
     </FullBgContainer>
   );

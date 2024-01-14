@@ -5,13 +5,14 @@ import { mdiWhatsapp, mdiEmailOutline } from "@mdi/js";
 
 import "@/sass/components/Contact.scss";
 
-const Contact = () => {
+const Contact = ({ secondary = false }) => {
   const email = "juan.josecuadros1@gmail.com";
   const subject = `subject=${encodeURI("Informacion General")}`;
   const body = `body=${encodeURI(
     "Me interesa saber mas sobre Provincia Mayor"
   )}`;
 
+  const btnClasses = `button ${secondary ? "button--secondary" : ""}`;
   const wapp = "https://api.whatsapp.com/send?phone=573154019699";
   const wappText = 'text="Hola, Me interesa saber mas sobre Provincia Mayor"';
   return (
@@ -23,7 +24,7 @@ const Contact = () => {
           </p>
           <a
             href={`${wapp}&${wappText}`}
-            className="button"
+            className={btnClasses}
             target="_blank"
             rel="noreferrer"
           >
@@ -31,7 +32,7 @@ const Contact = () => {
               <Icon path={mdiWhatsapp} size={1} /> Escribenos a whatsapp
             </span>
           </a>
-          <a href={`mailto:${email}?${subject}&${body}`} className="button">
+          <a href={`mailto:${email}?${subject}&${body}`} className={btnClasses}>
             <span>
               <Icon path={mdiEmailOutline} size={1} /> Escribenos un correo
             </span>

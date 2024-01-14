@@ -1,5 +1,3 @@
-// import { Link } from "react-router-dom";
-
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Benefits from "@/components/Benefits/Benefits";
@@ -8,11 +6,38 @@ import Gallery from "@/components/Gallery/Gallery";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
 
+import heroXl from "@/assets/hero-xl.png";
+import heroMd from "@/assets/hero-md.png";
+import heroSm from "@/assets/hero-sm.png";
+
 export default function Homepage() {
+  const homePageHero = [
+    {
+      path: heroXl,
+      media: "(min-width: 1280px)",
+      alt: "test",
+    },
+    {
+      path: heroMd,
+      media: "(min-width: 768px)",
+      alt: "test",
+    },
+    {
+      path: heroSm,
+      alt: "test",
+    },
+  ];
+
+  const heroContent = {
+    title: "Cuidado Profesional",
+    body: "Reunimos un equipo de Cuidadores Calificados con experiencia,comprometidos con brindar atencion de la mas alta calidad",
+    cta: "Contáctenos",
+  };
+
   return (
     <>
       <Header />
-      <Hero />
+      <Hero heroImages={homePageHero} copy={heroContent} />
       <Benefits />
       <Services />
       <Gallery />

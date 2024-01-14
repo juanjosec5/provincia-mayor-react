@@ -1,0 +1,96 @@
+@use '../abstracts/' as *;
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include breakpoint-min(desktop) {
+    gap: 4rem;
+  }
+    
+  .service {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint-min(desktop) {
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: repeat(12, 1fr);
+      align-items: center;
+    }
+
+    &__image {
+      .picture-image {
+        height: 100%;
+        max-height: 200px;
+        left: calc(-50vw + 50%);
+        object-fit: cover;
+        position: relative;
+        width: 100vw;
+        margin-bottom: 2rem;
+
+        @include breakpoint-min(desktop) {
+          position: static;
+          width: 100%;
+          max-height: unset;
+          object-fit: cover;
+          margin-bottom: 0;
+        }
+      }
+
+      @include breakpoint-min(desktop) {
+        grid-column: 1/7;
+        align-self: center;
+        max-height: 500px;
+      }
+    }
+
+    &__copy {
+
+      h2 {
+        text-align: left;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .service__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+        ul {
+          padding-left: 1.5rem;
+          display: flex;
+          flex-direction: column;
+          gap: .3rem;
+
+          li::before {
+            content: "";
+            display: inline-block;
+            width: .3rem;
+            height: .3rem;
+            margin-right: 0.5em; 
+            background-color: get-color(primary);
+            border-radius: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+
+      @include breakpoint-min(desktop) {
+        grid-column: 7/-1;
+      }
+    }
+
+    &--reverse {
+      .service__image {
+        grid-column: 7/-1;
+      }
+      .service__copy {
+        grid-row: 1;
+        grid-column: 1/7;
+      }
+    }
+  }
+}

@@ -1,14 +1,15 @@
 const Media = ({ type, path, alt = "", format = "video/webm", ...props }) => {
   return (
     <>
-      {type === "image" && typeof path === "object" && (
+      {type === "picture" && (
         <picture>
           {path.map((sourceData, index) => {
             if (index === path.length - 1) {
               return (
                 <img
+                  className="picture-image"
                   loading="lazy"
-                  key={sourceData.path}
+                  key={index}
                   src={sourceData.path}
                   alt={sourceData.alt}
                   {...props}
@@ -17,7 +18,7 @@ const Media = ({ type, path, alt = "", format = "video/webm", ...props }) => {
             } else {
               return (
                 <source
-                  key={sourceData.path}
+                  key={index}
                   srcSet={sourceData.path}
                   media={sourceData.media}
                   alt={sourceData.alt}
