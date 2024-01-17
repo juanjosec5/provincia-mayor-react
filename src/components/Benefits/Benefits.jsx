@@ -15,33 +15,33 @@ const Benefits = () => {
   const cardData = [
     {
       imgPath: benefit2,
-      title: "Vivienda",
-      body: "Habitaciones individuales con baño privado, espaciosas, cómodas, seguras, con iluminación y ventilación natural. Amplias zonas comúnes y hermosos jardines.",
+      title: "Que Observar",
+      body: "La tercera edad trae cambios que son fáciles de evidenciar pero difíciles de aceptar, en Provincia Mayor contamos con apoyo profesional que le ayudarán a entenderlos.",
     },
     {
       imgPath: benefit3,
-      title: "Asistencia y Cuidado Personal",
-      body: "Asistencia en higiene personal, rutina de baño, cambio de vestuario y administración de medicamentos.",
+      title: "El Primer Paso",
+      body: "En Provincia Mayor, priorizamos su bienestar con atención personalizada y opciones detalladas. Equipo capacitado disponible.",
     },
     {
       imgPath: benefit4,
-      title: "Preparación de Alimentos y Dietas",
-      body: "Alimentación balanceada, comidas nutritivas y deliciosas. Planificación de dietas especiales.",
+      title: "Presupuesto",
+      body: "Elegir comunidad para mayores es crucial y debe ser asequible. Precio es una preocupación, entendemos su importancia.",
     },
     {
       imgPath: benefit5,
-      title: "Recreación y Socialización",
-      body: "Actividades grupales diarias físicas, lúdicas, intelectuales y espirituales.",
+      title: "Proceso de ingreso",
+      body: "Queremos asegurarnos de conocer las condiciones de nuestros residentes para ofrecer el acompañamiento adecuado para cada uno y garantizar el bienestar de nuestra comunidad.",
     },
     {
       imgPath: benefit6,
-      title: "Servicio de Limpieza y Lavandería",
-      body: "Limpieza diaria del cuarto y baño. Lavandería de vestuario y ropa de cama.",
+      title: "Protocolo y personal calificado",
+      body: "Nuestros cuidadores están en capacidad de brindar la seguridad y la confianza necesaria para que cada residente se sienta acompañado profesionalmente, respetado y apreciado.",
     },
     {
       imgPath: benefit1,
-      title: "Club Día y Servicios Adicionales",
-      body: "Disfrute durante el día nuestra programación de actividades con el acompañamiento de personal calificado.",
+      title: "Descubre tu mejor opción",
+      body: "En Provincia Mayor, adaptamos nuestro servicio a las necesidades del adulto mayor, asegurando una atención personalizada y efectiva.",
     },
   ];
 

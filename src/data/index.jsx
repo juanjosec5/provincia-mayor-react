@@ -1,11 +1,28 @@
-import img1Sm from "@/assets/services/service-1/service-1-sm.png";
-import img1Md from "@/assets/services/service-1/service-1-md.png";
-import img1Lg from "@/assets/services/service-1/service-1-lg.png";
+import {
+  Service1Sm,
+  Service1Md,
+  Service1Lg,
+  Service2Sm,
+  Service2Md,
+  Service2Lg,
+  Service3Sm,
+  Service3Md,
+  Service3Lg,
+  Service4Sm,
+  Service4Md,
+  Service4Lg,
+  Service5Sm,
+  Service5Md,
+  Service5Lg,
+  Service6Sm,
+  Service6Md,
+  Service6Lg,
+} from "@/assets/services";
 
 const servicesHeadings = {
   1: "Vivienda",
   2: "Asistencia y Cuidado Personal",
-  3: "Preparación de Alimentos y Planeación de Dietaszz",
+  3: "Preparación de Alimentos y Planeación de Dietas",
   4: "Recreación y Socialización",
   5: "Servicio de Limpieza y Lavandería",
   6: "Club Día y Servicios Adicionales",
@@ -14,34 +31,34 @@ const servicesHeadings = {
 const service1Body = (
   <>
     <p>
-      Brindamos un alojamiento amplio, privado y con baño, espacios con
-      excelente iluminación natural y ventilación para el desarrollo de
-      múltiples actividades creando un entorno activo y social donde el
-      residente podrá conocer y compartir con personas en la misma etapa de
-      vida.
+      Brindamos un alojamiento amplio y privado diseñado para el cuidado del
+      adulto mayor, que incluye:
     </p>
     <ul>
       <li>
-        26 habitaciones con baño privado, con todas las facilidades para el
-        cuidado y la atención del adulto mayor
+        26 habitaciones con baño privado, closets amplios y conexión para
+        televisión
       </li>
-      <li>Closet amplio</li>
-      <li>Conexion para televisión</li>
-      <li>Botón de llamado inalámbrico</li>
-      <li>Amplios corredores</li>
-      <li>Jardines</li>
-      <li>Oratorio</li>
-      <li>Salón comedor</li>
-      <li>Salón de actividades</li>
-      <li>Sala de televisión</li>
-      <li>Gimnasio</li>
-      <li>Enfermeria</li>
-      <li>Baños en zonas comunes</li>
+      <li>Botón de llamado inalámbrico para mayor seguridad</li>
       <li>
-        Acceso a la celebración diaria de la eucaristía en la Capilla de las
+        Amplios corredores y jardines para un entorno tranquilo y agradable
+      </li>
+      <li>
+        Espacios comunes como oratorio, salón comedor, salón de actividades y
+        sala de televisión
+      </li>
+      <li>
+        Instalaciones para el bienestar físico, como gimnasio y enfermería
+      </li>
+      <li>Baños disponibles en zonas comunes para mayor comodidad</li>
+      <li>
+        Acceso diario a la celebración de la eucaristía en la Capilla de las
         Hermanas Dominicas de la Presentación
       </li>
-      <li>Wifi en todas las habitaciones y zonas comunes</li>
+      <li>
+        Conexión wifi disponible en todas las habitaciones y zonas comunes,
+        fomentando la conectividad y el ambiente social entre los residentes.
+      </li>
     </ul>
   </>
 );
@@ -49,15 +66,16 @@ const service1Body = (
 const service2Body = (
   <>
     <p>
-      Nuestro equipo brinda, de acuerdo con el protocolo establecido y el nivel
-      de independencia del residente, la asistencia, seguridad y confianza para
-      que cada uno se sienta respetado, acompañado profesionalmente y apreciado.
+      Nuestro equipo proporciona, siguiendo el protocolo establecido y
+      considerando el nivel de independencia de cada residente, asistencia,
+      seguridad y confianza, garantizando que cada uno se sienta respetado,
+      acompañado profesionalmente y valorado. Esto se logra a través de:
     </p>
     <ul>
       <li>Rutina de inicio de día</li>
       <li>Manejo de incontinencia</li>
-      <li>Alimentación</li>
-      <li>Desplazamientos</li>
+      <li>Asistencia en la alimentación.</li>
+      <li>Apoyo en desplazamientos.</li>
       <li>Participación en las actividades programadas diariamente</li>
       <li>Rutina de final del día</li>
       <li>Atención de llamados durante la noche</li>
@@ -113,62 +131,26 @@ const service5Body = (
 const service6Body = (
   <>
     <p>
-      De lunes a sábado a partir de las 8 a.m. hasta las 6 p.m. podrán disfrutar
-      de nuestra programación de actividades en un ambiente agradable, seguro y
-      tranquilo, con el acompañamiento y cuidado requerido para cada caso.
-    </p>
-    <p>
-      Se pueden contratar paquetes según el número de días que asista durante el
-      mes.
+      De lunes a sábado, de 8 a.m. a 6 p.m., disfrute de nuestra programación de
+      actividades con acompañamiento y cuidado personalizado. Se ofrecen
+      paquetes mensuales con opciones que incluyen:
     </p>
     <ul>
-      <li>Servicios de televisión por suscripción</li>
+      <li>Servicios de televisión por suscripción.</li>
+      <li>Dietas alimenticias especiales según recomendación médica.</li>
+      <li>Sesiones de terapias bajo recomendación médica.</li>
       <li>
-        Dietas alimenticias especiales
-        <ul>
-          <li>
-            De acuerdo con recomendación del médico tratante del residente.
-          </li>
-        </ul>
+        Servicios/equipos adicionales en la habitación según necesidades
+        específicas.
       </li>
       <li>
-        Sesiones de Terapias
-        <ul>
-          <li>
-            De acuerdo con recomendación del médico tratante del residente.
-          </li>
-        </ul>
+        Transporte y acompañamiento proporcionado por terceros calificados para
+        citas médicas, compras, entretenimiento, etc.
       </li>
+      <li>Peluquería con visitas semanales.</li>
       <li>
-        Servicios/Equipos adicionales en la habitación
-        <ul>
-          <li>Según necesidades específicas</li>
-        </ul>
-      </li>
-      <li>
-        Transporte y acompañamiento
-        <ul>
-          <li>
-            En Provincia Mayor contará con terceros calificados para esta labor
-            con el fin de ayudar en el desplazamiento y acompañamiento para
-            citas médicas, compras, entretenimiento, etc.
-          </li>
-        </ul>
-      </li>
-      <li>
-        Peluquería
-        <ul>
-          <li>Visitas semanales</li>
-        </ul>
-      </li>
-      <li>
-        Acompañantes temporales
-        <ul>
-          <li>
-            Cargo fijo por alimentación y alojamiento. Requiere consulta y
-            coordinación previa
-          </li>
-        </ul>
+        Acompañantes temporales con cargo fijo por alimentación y alojamiento
+        (requiere consulta y coordinación previa).
       </li>
     </ul>
   </>
@@ -179,17 +161,17 @@ const servicesData = [
     reverse: true,
     imgPath: [
       {
-        path: img1Lg,
+        path: Service1Lg,
         media: "(min-width: 1280px)",
         alt: "test",
       },
       {
-        path: img1Md,
+        path: Service1Md,
         media: "(min-width: 768px)",
         alt: "test",
       },
       {
-        path: img1Sm,
+        path: Service1Sm,
         media: "(orientation: portrait)",
         alt: "test",
       },
@@ -200,17 +182,17 @@ const servicesData = [
   {
     imgPath: [
       {
-        path: img1Lg,
+        path: Service2Lg,
         media: "(min-width: 1280px)",
         alt: "test",
       },
       {
-        path: img1Md,
+        path: Service2Md,
         media: "(min-width: 768px)",
         alt: "test",
       },
       {
-        path: img1Sm,
+        path: Service2Sm,
         media: "(orientation: portrait)",
         alt: "test",
       },
@@ -222,17 +204,17 @@ const servicesData = [
     reverse: true,
     imgPath: [
       {
-        path: img1Lg,
+        path: Service3Lg,
         media: "(min-width: 1280px)",
         alt: "test",
       },
       {
-        path: img1Md,
+        path: Service3Md,
         media: "(min-width: 768px)",
         alt: "test",
       },
       {
-        path: img1Sm,
+        path: Service3Sm,
         media: "(orientation: portrait)",
         alt: "test",
       },
@@ -243,17 +225,17 @@ const servicesData = [
   {
     imgPath: [
       {
-        path: img1Lg,
+        path: Service4Lg,
         media: "(min-width: 1280px)",
         alt: "test",
       },
       {
-        path: img1Md,
+        path: Service4Md,
         media: "(min-width: 768px)",
         alt: "test",
       },
       {
-        path: img1Sm,
+        path: Service4Sm,
         media: "(orientation: portrait)",
         alt: "test",
       },
@@ -265,17 +247,17 @@ const servicesData = [
     reverse: true,
     imgPath: [
       {
-        path: img1Lg,
+        path: Service5Lg,
         media: "(min-width: 1280px)",
         alt: "test",
       },
       {
-        path: img1Md,
+        path: Service5Md,
         media: "(min-width: 768px)",
         alt: "test",
       },
       {
-        path: img1Sm,
+        path: Service5Sm,
         media: "(orientation: portrait)",
         alt: "test",
       },
@@ -286,17 +268,17 @@ const servicesData = [
   {
     imgPath: [
       {
-        path: img1Lg,
+        path: Service6Lg,
         media: "(min-width: 1280px)",
         alt: "test",
       },
       {
-        path: img1Md,
+        path: Service6Md,
         media: "(min-width: 768px)",
         alt: "test",
       },
       {
-        path: img1Sm,
+        path: Service6Sm,
         media: "(orientation: portrait)",
         alt: "test",
       },

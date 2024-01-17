@@ -5,3 +5,5 @@ export const debounce = (func, wait) => {
     timeout = setTimeout(() => func.apply(this, args), wait);
   }
 }
+
+export const isSafari = ()  =>  /^((?!chrome|android).)*safari/i.test(navigator.userAgent);

@@ -5,9 +5,9 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: .5rem;
-
-  @include breakpoint-min('tablet-sm') {
-    
+  
+  @include breakpoint-min('tablet') {
+    gap: 1rem;
   }
 
   .gallery-thumbnail {

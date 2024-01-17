@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import Media from "@/components/BaseComponents/Media";
 
 const ServicesCard = ({
@@ -6,9 +8,20 @@ const ServicesCard = ({
   body = "Test",
   reverse = false,
 }) => {
-  const classes = `service ${reverse ? "service--reverse" : ""}`;
+  const [ref, inView] = useInView();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (inView) {
+      setIsVisible(true);
+    }
+  }, [inView]);
+
+  const classes = `service ${reverse ? "service--reverse" : ""} ${
+    isVisible ? "visible" : ""
+  }`;
   return (
-    <article className={classes}>
+    <article ref={ref} className={classes}>
       <div className="service__image">
         <Media type="picture" path={imgArray}></Media>
       </div>

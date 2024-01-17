@@ -5,6 +5,7 @@ import Services from "@/components/Services/Services";
 import Gallery from "@/components/Gallery/Gallery";
 import Contact from "@/components/Contact/Contact";
 import Footer from "@/components/Footer/Footer";
+import FullBgContainer from "@/components/BaseComponents/FullBgContainer";
 
 import heroXl from "@/assets/hero-xl.png";
 import heroMd from "@/assets/hero-md.png";
@@ -41,7 +42,9 @@ export default function Homepage() {
       <Benefits />
       <Services />
       <Gallery />
-      <Contact />
+      <FullBgContainer>
+        <Contact secondary={true} />
+      </FullBgContainer>
       <Footer />
       {/* <Link to="404">not found</Link> */}
     </>

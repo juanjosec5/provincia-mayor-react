@@ -1,3 +1,5 @@
+import { isSafari } from "@/utils/utils";
+
 const Media = ({ type, path, alt = "", format = "video/webm", ...props }) => {
   return (
     <>
@@ -8,7 +10,7 @@ const Media = ({ type, path, alt = "", format = "video/webm", ...props }) => {
               return (
                 <img
                   className="picture-image"
-                  loading="lazy"
+                  loading={isSafari ? "eager" : "lazy"}
                   key={index}
                   src={sourceData.path}
                   alt={sourceData.alt}

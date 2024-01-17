@@ -1,6 +1,7 @@
 @use '../abstracts/' as *;
 
 .services {
+  
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -12,6 +13,13 @@
   .service {
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    
+    @include breakpoint-min(tablet) {
+      opacity: 1;
+      transform: translateX(0);
+    }
 
     @include breakpoint-min(desktop) {
       display: grid;
@@ -92,5 +100,18 @@
         grid-column: 1/7;
       }
     }
+
+    &:nth-child(even) {
+      transform: translateX(-250px);
+    }
+
+    &:nth-child(odd) {
+      transform: translateX(250px);
+    }
+  }
+
+  .service.visible {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

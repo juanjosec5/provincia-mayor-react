@@ -5,9 +5,9 @@ import Hero from "@/components/Hero/Hero";
 import Contact from "@/components/Contact/Contact";
 import FullBgContainer from "@/components/BaseComponents/FullBgContainer";
 
-import heroXl from "@/assets/hero-xl.png";
-import heroMd from "@/assets/hero-md.png";
-import heroSm from "@/assets/hero-sm.png";
+import heroXl from "@/assets/services-hero-lg.png";
+import heroMd from "@/assets/services-hero-md.png";
+import heroSm from "@/assets/services-hero-sm.png";
 
 export default function ServicesPage() {
   const servicesHeroImgs = [
@@ -32,6 +32,7 @@ export default function ServicesPage() {
     body: "Brindamos cuidado integral y afectuoso para tus seres queridos, asegurándonos de que vivan con comodidad, respeto y atención personalizada",
     cta: "Contáctenos",
   };
+
   return (
     <>
       <Header />
