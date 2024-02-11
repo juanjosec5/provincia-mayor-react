@@ -16,6 +16,7 @@ const Service = () => {
           imgArray={s.imgPath}
           title={s.title}
           body={s.body}
+          id={s.id}
         />
       ))}
     </Section>

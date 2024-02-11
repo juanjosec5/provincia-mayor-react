@@ -178,6 +178,7 @@ const servicesData = [
     ],
     title: servicesHeadings[1],
     body: service1Body,
+    id: "vivienda",
   },
   {
     imgPath: [
@@ -199,6 +200,7 @@ const servicesData = [
     ],
     title: servicesHeadings[2],
     body: service2Body,
+    id: "asistencia",
   },
   {
     reverse: true,
@@ -221,6 +223,7 @@ const servicesData = [
     ],
     title: servicesHeadings[3],
     body: service3Body,
+    id: "alimentos",
   },
   {
     imgPath: [
@@ -242,6 +245,7 @@ const servicesData = [
     ],
     title: servicesHeadings[5],
     body: service5Body,
+    id: "recreacion",
   },
   {
     reverse: true,
@@ -264,6 +268,7 @@ const servicesData = [
     ],
     title: servicesHeadings[6],
     body: service6Body,
+    id: "limpieza",
   },
   {
     imgPath: [
@@ -285,6 +290,7 @@ const servicesData = [
     ],
     title: servicesHeadings[4],
     body: service4Body,
+    id: "club",
   },
 ];
 

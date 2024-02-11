@@ -4,8 +4,9 @@ import Media from "@/components/BaseComponents/Media";
 
 const ServicesCard = ({
   imgArray,
-  title = "test",
-  body = "Test",
+  title = "",
+  body = "",
+  id = "",
   reverse = false,
 }) => {
   const [ref, inView] = useInView();
@@ -21,7 +22,7 @@ const ServicesCard = ({
     isVisible ? "visible" : ""
   }`;
   return (
-    <article ref={ref} className={classes}>
+    <article ref={ref} className={classes} id={id}>
       <div className="service__image">
         <Media type="picture" path={imgArray}></Media>
       </div>

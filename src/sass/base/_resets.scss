@@ -11,7 +11,7 @@ html {
     font-family: $font-name, $font-serif;
     /* Scrollbar Styling : Firefox */
     scrollbar-width: thin;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 
 *,
@@ -47,7 +47,7 @@ ol {
 body {
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
     // text-rendering: optimizeSpeed;
     // line-height: 1.5;
 }

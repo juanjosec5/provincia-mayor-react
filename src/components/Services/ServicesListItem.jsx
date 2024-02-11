@@ -1,8 +1,10 @@
-const ServicesListItem = ({ text, icon, ...props }) => {
+import { HashLink } from "react-router-hash-link";
+
+const ServicesListItem = ({ text, icon, link = "", ...props }) => {
   return (
     <li {...props}>
       <span>{icon}</span>
-      {text}
+      <HashLink to={link}>{text}</HashLink>
     </li>
   );
 };

@@ -5,11 +5,17 @@ import Hero from "@/components/Hero/Hero";
 import Contact from "@/components/Contact/Contact";
 import FullBgContainer from "@/components/BaseComponents/FullBgContainer";
 
+import { useEffect } from "react";
+
 import heroXl from "@/assets/services-hero-lg.png";
 import heroMd from "@/assets/services-hero-md.png";
 import heroSm from "@/assets/services-hero-sm.png";
 
 export default function ServicesPage() {
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
+
   const servicesHeroImgs = [
     {
       path: heroXl,

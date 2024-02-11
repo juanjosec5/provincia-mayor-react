@@ -4,11 +4,15 @@ import ServicesList from "@/components/Services/ServicesList";
 import FullBgContainer from "@/components/BaseComponents/FullBgContainer";
 import ScrollToTop from "@/utils/scrollToTop";
 
-// import { Link } from "react-router-dom";import { HashLink } from 'react-router-hash-link';
 import { HashLink } from "react-router-hash-link";
 
 import Icon from "@mdi/react";
 import { mdiStar } from "@mdi/js";
+import { mdiHome } from "@mdi/js";
+import { mdiHospitalBox } from "@mdi/js";
+import { mdiWater } from "@mdi/js";
+import { mdiCardsClub } from "@mdi/js";
+import { mdiFoodDrumstick } from "@mdi/js";
 
 import "@/sass/components/Services.scss";
 
@@ -16,21 +20,33 @@ const Services = () => {
   const services = [
     {
       text: "Vivienda",
+      icon: mdiHome,
+      url: "/services#vivienda",
     },
     {
       text: "Asistencia y Cuidado Personal",
+      icon: mdiHospitalBox,
+      url: "/services#asistencia",
     },
     {
       text: "Planeacion de Alimentos y Planeacion de Dietas",
+      icon: mdiFoodDrumstick,
+      url: "/services#alimentos",
     },
     {
       text: "Recreacion Y Socializacion",
+      icon: mdiCardsClub,
+      url: "/services#recreacion",
     },
     {
       text: "Servicio de Limpieza y Lavanderia",
+      icon: mdiWater,
+      url: "/services#limpieza",
     },
     {
       text: "Club Dia y Servicios Adicionales",
+      icon: mdiStar,
+      url: "/services#club",
     },
   ];
 
@@ -42,7 +58,8 @@ const Services = () => {
             <ServicesListItem
               key={s.text}
               text={s.text}
-              icon={<Icon path={mdiStar} size={1} color="#BD901A" />}
+              link={s.url}
+              icon={<Icon path={s.icon} size={1} color="#BD901A" />}
             />
           ))}
         </ServicesList>
