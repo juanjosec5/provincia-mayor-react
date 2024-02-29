@@ -13,7 +13,7 @@ const Contact = ({ secondary = false }) => {
   )}`;
 
   const btnClasses = `button ${secondary ? "button--secondary" : ""}`;
-  const wapp = "https://api.whatsapp.com/send?phone=573154019699";
+  const wapp = "https://api.whatsapp.com/send?phone=573014859237";
   const wappText = "text=Hola, Me interesa saber mas sobre Provincia Mayor";
   return (
     <Section classes="" id="contact">
