@@ -1,7 +1,6 @@
 @use '../abstracts/' as *;
 
 .services {
-  
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -84,6 +83,10 @@
             border-radius: 50%;
             transform: translateY(-50%);
           }
+        }
+
+        a {
+          margin-left: 0;
         }
       }
 

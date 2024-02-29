@@ -47,11 +47,6 @@ const Contact = ({ secondary = false }) => {
           <p>Calle 10 66B-100 Cali, Colombia</p>
         </div>
       </div>
-      <div className="ss-container schedule">
-        <p className="ss-align-center">
-          Nuestros horarios de atencion son de Lunes a Sabado de 8am a 10pm
-        </p>
-      </div>
     </Section>
   );
 };

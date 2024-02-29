@@ -35,7 +35,7 @@ export default function ServicesPage() {
 
   const heroContent = {
     title: "Nuestros Servicios",
-    body: "Brindamos cuidado integral y afectuoso para tus seres queridos, asegurándonos de que vivan con comodidad, respeto y atención personalizada",
+    body: "Brindamos cuidado integral con un equipo interdisciplinario, generando atención personalizada a los Residentes con calidez y  respeto",
     cta: "Contáctenos",
   };
 

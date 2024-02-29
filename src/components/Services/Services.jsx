@@ -29,7 +29,7 @@ const Services = () => {
       url: "/services#asistencia",
     },
     {
-      text: "Planeacion de Alimentos y Planeacion de Dietas",
+      text: "Planeación de Alimentos y Dietas",
       icon: mdiFoodDrumstick,
       url: "/services#alimentos",
     },
@@ -44,7 +44,7 @@ const Services = () => {
       url: "/services#limpieza",
     },
     {
-      text: "Club Dia y Servicios Adicionales",
+      text: "Club Día",
       icon: mdiStar,
       url: "/services#club",
     },

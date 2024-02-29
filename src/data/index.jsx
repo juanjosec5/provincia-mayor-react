@@ -22,43 +22,26 @@ import {
 const servicesHeadings = {
   1: "Vivienda",
   2: "Asistencia y Cuidado Personal",
-  3: "Preparación de Alimentos y Planeación de Dietas",
+  3: "Planeación de Alimentos y Dietas",
   4: "Recreación y Socialización",
   5: "Servicio de Limpieza y Lavandería",
-  6: "Club Día y Servicios Adicionales",
+  6: "Club Día",
 };
 
 const service1Body = (
   <>
-    <p>
-      Brindamos un alojamiento amplio y privado diseñado para el cuidado del
-      adulto mayor, que incluye:
-    </p>
+    <p>Alojamiento con espacios amplios y privados que incluyen:</p>
     <ul>
       <li>
-        26 habitaciones con baño privado, closets amplios y conexión para
-        televisión
+        Habitaciones amplias con iluminación, ventilación natural y con clósets
+        de buena capacidad.
       </li>
-      <li>Botón de llamado inalámbrico para mayor seguridad</li>
+      <li>Baños privados adaptados para las necesidades de movilidad.</li>
       <li>
-        Amplios corredores y jardines para un entorno tranquilo y agradable
+        Botón de llamado inalámbrico para garantizar atención y seguridad.
       </li>
-      <li>
-        Espacios comunes como oratorio, salón comedor, salón de actividades y
-        sala de televisión
-      </li>
-      <li>
-        Instalaciones para el bienestar físico, como gimnasio y enfermería
-      </li>
-      <li>Baños disponibles en zonas comunes para mayor comodidad</li>
-      <li>
-        Acceso diario a la celebración de la eucaristía en la Capilla de las
-        Hermanas Dominicas de la Presentación
-      </li>
-      <li>
-        Conexión wifi disponible en todas las habitaciones y zonas comunes,
-        fomentando la conectividad y el ambiente social entre los residentes.
-      </li>
+      <li>Conexión wifi disponible en todas las habitaciones y áreas de PM.</li>
+      <li>Jardines que generan un entorno tranquilo y agradable.</li>
     </ul>
   </>
 );
@@ -66,19 +49,18 @@ const service1Body = (
 const service2Body = (
   <>
     <p>
-      Nuestro equipo proporciona, siguiendo el protocolo establecido y
-      considerando el nivel de independencia de cada residente, asistencia,
-      seguridad y confianza, garantizando que cada uno se sienta respetado,
-      acompañado profesionalmente y valorado. Esto se logra a través de:
+      Un grupo de cuidadores calificados y con experiencia en el cuidado del
+      adulto mayor apoyan a nuestros residentes considerando el nivel de
+      independencia de cada uno.
     </p>
     <ul>
-      <li>Rutina de inicio de día</li>
-      <li>Manejo de incontinencia</li>
-      <li>Asistencia en la alimentación.</li>
-      <li>Apoyo en desplazamientos.</li>
-      <li>Participación en las actividades programadas diariamente</li>
-      <li>Rutina de final del día</li>
-      <li>Atención de llamados durante la noche</li>
+      <li>Rutina de inicio y final del día</li>
+      <li>Asistencia en rutinas de baño y alimentación</li>
+      <li>
+        Apoyo en todos los desplazamientos al interior de Provincia Mayor.
+      </li>
+      <li>Participación en las actividades programadas diariamente.</li>
+      <li>Atención de llamados 24 horas.</li>
     </ul>
   </>
 );
@@ -86,16 +68,13 @@ const service2Body = (
 const service3Body = (
   <>
     <p>
-      En un espacio rodeado de jardines, cómodo y ventilado se servirá
-      diariamente un menú elaborado por nutricionista especializada en adultos
-      mayores y servido por personas amigables y dedicadas.
+      Dieta alimenticia basada en recomendaciones de profesionales con
+      experiencia en nutrición de adultos mayores brindando:
     </p>
     <ul>
-      <li>Alimentación diaria básica: desayuno, almuerzo y comida</li>
-      <li>Meriendas saludables a media mañana y a media tarde</li>
-      <li>Carta variada diariamente</li>
-      <li>Estación de café</li>
-      <li>Manejo de dietas especiales</li>
+      <li>Alimentación diaria: Desayuno, almuerzo y comida.</li>
+      <li>Refrigerios saludables a media mañana y media tarde.</li>
+      <li>Variedad de menús</li>
     </ul>
   </>
 );
@@ -103,16 +82,16 @@ const service3Body = (
 const service4Body = (
   <>
     <p>
-      Provincia Mayor, bajo la coordinación de terapistas ocupacionales programa
-      mensualmente las actividades diarias a realizar para que el adulto mayor
-      se divierta, socialice y esté activo mentalmente.
+      Provincia Mayor, bajo la dirección de profesionales de la salud expertos
+      en el adulto mayor programa actividades para generar espacios donde los
+      residentes puedan divertirse, socializar y estar activos física y
+      mentalmente.
     </p>
     <ul>
-      <li>Actividades físicas</li>
-      <li>Actividades lúdicas</li>
-      <li>Carta variada diariamente</li>
-      <li>Actividades espirituales</li>
-      <li>Terapias y talleres</li>
+      <li>Actividades físicas: Apoyo a motricidad gruesa.</li>
+      <li>Actividades lúdicas.</li>
+      <li>Actividades espirituales.</li>
+      <li>Terapias y talleres: Motricidad fina.</li>
     </ul>
   </>
 );
@@ -120,10 +99,10 @@ const service4Body = (
 const service5Body = (
   <>
     <p>
-      Todos los lugares comunes así como la habitación y baño de los residentes
-      contarán con aseo diario garantizando limpieza. El servicio de lavandería
-      básico facilitará la disponibilidad de su vestuario, al igual que su ropa
-      de cama y toallas.
+      La pulcritud es algo que nos caracteriza, diariamente las habitaciones,
+      sus baños y las zonas comunes tienen una rutina de limpieza para
+      garantizar la higiene y el orden. Nuestro servicio de lavandería asegura
+      la disponibilidad del vestuario del residente, su ropa de cama y toallas.
     </p>
   </>
 );
@@ -131,28 +110,13 @@ const service5Body = (
 const service6Body = (
   <>
     <p>
-      De lunes a sábado, de 8 a.m. a 6 p.m., disfrute de nuestra programación de
-      actividades con acompañamiento y cuidado personalizado. Se ofrecen
-      paquetes mensuales con opciones que incluyen:
+      Con el acompañamiento y supervisión de nuestro equipo ofrecemos la opción
+      de disfrutar de lunes a viernes de nuestras actividades y alimentación
+      durante el día.
     </p>
-    <ul>
-      <li>Servicios de televisión por suscripción.</li>
-      <li>Dietas alimenticias especiales según recomendación médica.</li>
-      <li>Sesiones de terapias bajo recomendación médica.</li>
-      <li>
-        Servicios/equipos adicionales en la habitación según necesidades
-        específicas.
-      </li>
-      <li>
-        Transporte y acompañamiento proporcionado por terceros calificados para
-        citas médicas, compras, entretenimiento, etc.
-      </li>
-      <li>Peluquería con visitas semanales.</li>
-      <li>
-        Acompañantes temporales con cargo fijo por alimentación y alojamiento
-        (requiere consulta y coordinación previa).
-      </li>
-    </ul>
+    <a className="button" href="#contact">
+      Contáctenos para más información
+    </a>
   </>
 );
 

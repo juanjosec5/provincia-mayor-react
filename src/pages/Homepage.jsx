@@ -30,8 +30,8 @@ export default function Homepage() {
   ];
 
   const heroContent = {
-    title: "Cuidado Profesional",
-    body: "Reunimos un equipo de Cuidadores Calificados con experiencia,comprometidos con brindar atencion de la mas alta calidad",
+    title: "Provincia Mayor",
+    body: "Somos un grupo de personas que brindamos al adulto mayor la máxima calidad  y estilo de vida mediante un cuidado asistido y servicios complementarios.",
     cta: "Contáctenos",
   };
 

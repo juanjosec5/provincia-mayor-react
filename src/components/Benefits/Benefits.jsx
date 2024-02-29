@@ -15,33 +15,33 @@ const Benefits = () => {
   const cardData = [
     {
       imgPath: benefit2,
-      title: "Que Observar",
-      body: "La tercera edad trae cambios que son fáciles de evidenciar pero difíciles de aceptar, en Provincia Mayor contamos con apoyo profesional que le ayudarán a entenderlos.",
+      title: "Espacios",
+      body: "Contamos con excelentes instalaciones, cómodas y amplias habitaciones, espacios ideales  para actividades grupales y hermosos jardines que contribuyen a generar calidad de vida.",
     },
     {
       imgPath: benefit3,
-      title: "El Primer Paso",
-      body: "En Provincia Mayor, priorizamos su bienestar con atención personalizada y opciones detalladas. Equipo capacitado disponible.",
+      title: "Vocación",
+      body: "Nos inspira contribuir al bienestar del Adulto Mayor y nos sentimos realizados con cada actividad que desarrollamos para lograrlo.",
     },
     {
       imgPath: benefit4,
-      title: "Presupuesto",
-      body: "Elegir comunidad para mayores es crucial y debe ser asequible. Precio es una preocupación, entendemos su importancia.",
+      title: "Experiencia",
+      body: "Conocemos y entendemos las situaciones y necesidades que se van presentando en esta etapa de la vida, así como la forma de apoyar en cada caso al Adulto Mayor y su familia.",
     },
     {
       imgPath: benefit5,
-      title: "Proceso de ingreso",
-      body: "Queremos asegurarnos de conocer las condiciones de nuestros residentes para ofrecer el acompañamiento adecuado para cada uno y garantizar el bienestar de nuestra comunidad.",
+      title: "Asistencia",
+      body: "Bajo el concepto de Vivienda Asistida ofrecemos acompañamiento a nuestros Residentes en sus rutinas y actividades diarias, con el apoyo de nuestro grupo de cuidadores calificados.",
     },
     {
       imgPath: benefit6,
-      title: "Protocolo y personal calificado",
-      body: "Nuestros cuidadores están en capacidad de brindar la seguridad y la confianza necesaria para que cada residente se sienta acompañado profesionalmente, respetado y apreciado.",
+      title: "Alimentación",
+      body: "Nutricionistas expertas en el adulto mayor han diseñado un plan de alimentación balanceado para nuestros Residentes, con nutritivas comidas y deliciosos refrigerios.",
     },
     {
       imgPath: benefit1,
-      title: "Descubre tu mejor opción",
-      body: "En Provincia Mayor, adaptamos nuestro servicio a las necesidades del adulto mayor, asegurando una atención personalizada y efectiva.",
+      title: "Recreación y Socialización",
+      body: "Realizamos actividades grupales de la mano de profesionales con gran experiencia en adultos mayores, que contribuyen a fortalecer habilidades cognitivas físicas y sociales.",
     },
   ];
 
