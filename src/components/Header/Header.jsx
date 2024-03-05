@@ -40,7 +40,7 @@ const Header = () => {
             className="nav-cta button"
             onClick={handleLinkSelection}
           >
-            contactanos
+            contáctenos
           </a>
         </MobileDrawer>
       </HeaderNav>
@@ -52,7 +52,7 @@ const Header = () => {
           className="nav-cta button"
           onClick={handleLinkSelection}
         >
-          contactanos
+          contáctenos
         </a>
       </HeaderNav>
     </header>

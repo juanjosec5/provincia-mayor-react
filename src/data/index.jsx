@@ -34,14 +34,12 @@ const service1Body = (
     <ul>
       <li>
         Habitaciones amplias con iluminación, ventilación natural y con clósets
-        de buena capacidad.
+        de buena capacidad
       </li>
-      <li>Baños privados adaptados para las necesidades de movilidad.</li>
-      <li>
-        Botón de llamado inalámbrico para garantizar atención y seguridad.
-      </li>
-      <li>Conexión wifi disponible en todas las habitaciones y áreas de PM.</li>
-      <li>Jardines que generan un entorno tranquilo y agradable.</li>
+      <li>Baños privados adaptados para las necesidades de movilidad</li>
+      <li>Botón de llamado inalámbrico para garantizar atención y seguridad</li>
+      <li>Conexión wifi disponible en todas las habitaciones y áreas de PM</li>
+      <li>Jardines que generan un entorno tranquilo y agradable</li>
     </ul>
   </>
 );
@@ -56,11 +54,9 @@ const service2Body = (
     <ul>
       <li>Rutina de inicio y final del día</li>
       <li>Asistencia en rutinas de baño y alimentación</li>
-      <li>
-        Apoyo en todos los desplazamientos al interior de Provincia Mayor.
-      </li>
-      <li>Participación en las actividades programadas diariamente.</li>
-      <li>Atención de llamados 24 horas.</li>
+      <li>Apoyo en todos los desplazamientos al interior de Provincia Mayor</li>
+      <li>Participación en las actividades programadas diariamente</li>
+      <li>Atención de llamados 24 horas</li>
     </ul>
   </>
 );
@@ -72,8 +68,8 @@ const service3Body = (
       experiencia en nutrición de adultos mayores brindando:
     </p>
     <ul>
-      <li>Alimentación diaria: Desayuno, almuerzo y comida.</li>
-      <li>Refrigerios saludables a media mañana y media tarde.</li>
+      <li>Alimentación diaria: Desayuno, almuerzo y comida</li>
+      <li>Refrigerios saludables a media mañana y media tarde</li>
       <li>Variedad de menús</li>
     </ul>
   </>
@@ -88,10 +84,10 @@ const service4Body = (
       mentalmente.
     </p>
     <ul>
-      <li>Actividades físicas: Apoyo a motricidad gruesa.</li>
-      <li>Actividades lúdicas.</li>
-      <li>Actividades espirituales.</li>
-      <li>Terapias y talleres: Motricidad fina.</li>
+      <li>Actividades físicas: Apoyo a motricidad gruesa</li>
+      <li>Actividades lúdicas</li>
+      <li>Actividades espirituales</li>
+      <li>Terapias y talleres: Motricidad fina</li>
     </ul>
   </>
 );
@@ -112,7 +108,7 @@ const service6Body = (
     <p>
       Con el acompañamiento y supervisión de nuestro equipo ofrecemos la opción
       de disfrutar de lunes a viernes de nuestras actividades y alimentación
-      durante el día.
+      durante el día
     </p>
     <a className="button" href="#contact">
       Contáctenos para más información

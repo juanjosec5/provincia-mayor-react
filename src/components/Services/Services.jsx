@@ -34,7 +34,7 @@ const Services = () => {
       url: "/services#alimentos",
     },
     {
-      text: "Recreacion Y Socializacion",
+      text: "Recreación y Socialización",
       icon: mdiCardsClub,
       url: "/services#recreacion",
     },

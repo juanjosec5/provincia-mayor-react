@@ -14,11 +14,6 @@ import "@/sass/components/Benefits.scss";
 const Benefits = () => {
   const cardData = [
     {
-      imgPath: benefit2,
-      title: "Espacios",
-      body: "Contamos con excelentes instalaciones, cómodas y amplias habitaciones, espacios ideales  para actividades grupales y hermosos jardines que contribuyen a generar calidad de vida.",
-    },
-    {
       imgPath: benefit3,
       title: "Vocación",
       body: "Nos inspira contribuir al bienestar del Adulto Mayor y nos sentimos realizados con cada actividad que desarrollamos para lograrlo.",
@@ -31,22 +26,27 @@ const Benefits = () => {
     {
       imgPath: benefit5,
       title: "Asistencia",
-      body: "Bajo el concepto de Vivienda Asistida ofrecemos acompañamiento a nuestros Residentes en sus rutinas y actividades diarias, con el apoyo de nuestro grupo de cuidadores calificados.",
+      body: "Bajo el concepto de Vivienda Asistida ofrecemos acompañamiento a nuestros residentes en sus rutinas y actividades diarias, con el apoyo de nuestro grupo de cuidadores calificados.",
     },
     {
       imgPath: benefit6,
       title: "Alimentación",
-      body: "Nutricionistas expertas en el adulto mayor han diseñado un plan de alimentación balanceado para nuestros Residentes, con nutritivas comidas y deliciosos refrigerios.",
+      body: "Nutricionistas expertas en el adulto mayor han diseñado un plan de alimentación balanceado para nuestros residentes, con nutritivas comidas y deliciosos refrigerios.",
+    },
+    {
+      imgPath: benefit2,
+      title: "Espacios",
+      body: "Contamos con excelentes instalaciones, cómodas y amplias habitaciones, espacios ideales para actividades grupales y hermosos jardines que contribuyen a generar calidad de vida.",
     },
     {
       imgPath: benefit1,
       title: "Recreación y Socialización",
-      body: "Realizamos actividades grupales de la mano de profesionales con gran experiencia en adultos mayores, que contribuyen a fortalecer habilidades cognitivas físicas y sociales.",
+      body: "Realizamos actividades grupales de la mano de profesionales con gran experiencia en adultos mayores, que contribuyen a fortalecer habilidades cognitivas, físicas y sociales.",
     },
   ];
 
   return (
-    <Section title="Por Qu&eacute; Escogernos" classes="benefits" id="benefits">
+    <Section title="Por qu&eacute; Escogernos" classes="benefits" id="benefits">
       <Cards>
         {cardData.map((card) => (
           <Card
