@@ -1,5 +1,13 @@
+import Header from "@/components/Header";
+import NotFoundDiv from "@/components/404/index";
+import Footer from "@/components/Footer/Footer";
+
 export default function NotFound() {
   return (
-    <div>404 - Page not found</div>
-  )
+    <>
+      <Header />
+      <NotFoundDiv />
+      <Footer />
+    </>
+  );
 }

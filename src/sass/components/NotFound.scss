@@ -1,0 +1,24 @@
+@use '../abstracts' as *;
+
+.not-found {
+  margin-top: 180px;
+  flex: 1 0 auto;
+  display: grid;
+  place-content: center;
+  
+  p {
+    color: get-color(primary);
+    font-size: 2rem;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+
+    @include breakpoint-min(tablet) {
+      font-size: 3rem;
+    }
+  }
+
+  .button {
+    margin: 2rem auto 0;
+  }
+}

@@ -108,7 +108,7 @@ const service6Body = (
     <p>
       Con el acompañamiento y supervisión de nuestro equipo ofrecemos la opción
       de disfrutar de lunes a viernes de nuestras actividades y alimentación
-      durante el día
+      durante el día.
     </p>
     <a className="button" href="#contact">
       Contáctenos para más información
