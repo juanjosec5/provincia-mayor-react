@@ -29,12 +29,12 @@ const Contact = ({ secondary = false }) => {
             rel="noreferrer"
           >
             <span>
-              <Icon path={mdiWhatsapp} size={1} /> Escribenos a whatsapp
+              <Icon path={mdiWhatsapp} size={1} /> Escribenos
             </span>
           </a>
           <a href={`mailto:${email}?${subject}&${body}`} className={btnClasses}>
             <span>
-              <Icon path={mdiEmailOutline} size={1} /> Escribenos un correo
+              <Icon path={mdiEmailOutline} size={1} /> Escribenos
             </span>
           </a>
         </div>

@@ -31,7 +31,7 @@ export default function Homepage() {
 
   const heroContent = {
     title: "Provincia Mayor",
-    body: "Somos un grupo de personas que brindamos al adulto mayor la máxima calidad  y estilo de vida mediante un cuidado asistido y servicios complementarios.",
+    body: "Somos un grupo de personas que basados en la experiencia y con el acompañamiento de profesionales de la salud, entiende los procesos que viven los adultos mayores y trabaja día a día para contribuir a su bienestar y el de su familia",
     cta: "Contáctenos",
   };
 

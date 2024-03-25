@@ -22,7 +22,7 @@ import {
 const servicesHeadings = {
   1: "Vivienda",
   2: "Asistencia y Cuidado Personal",
-  3: "Planeación de Alimentos y Dietas",
+  3: "Alimentación",
   4: "Recreación y Socialización",
   5: "Servicio de Limpieza y Lavandería",
   6: "Club Día",
@@ -33,12 +33,12 @@ const service1Body = (
     <p>Alojamiento con espacios amplios y privados que incluyen:</p>
     <ul>
       <li>
-        Habitaciones amplias con iluminación, ventilación natural y con clósets
+        Habitaciones amplias con iluminación, ventilación natural y con clóset
         de buena capacidad
       </li>
       <li>Baños privados adaptados para las necesidades de movilidad</li>
       <li>Botón de llamado inalámbrico para garantizar atención y seguridad</li>
-      <li>Conexión wifi disponible en todas las habitaciones y áreas de PM</li>
+      <li>Cobertura wifi en todas las habitaciones y áreas comunes</li>
       <li>Jardines que generan un entorno tranquilo y agradable</li>
     </ul>
   </>

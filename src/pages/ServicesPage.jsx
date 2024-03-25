@@ -35,7 +35,7 @@ export default function ServicesPage() {
 
   const heroContent = {
     title: "Nuestros Servicios",
-    body: "Brindamos cuidado integral con un equipo interdisciplinario, generando atención personalizada a los residentes con calidez y  respeto",
+    body: "Trabajando en equipo con un grupo experimentado, ofrecemos al adulto mayor la asistencia que requiere para mejorar su calidad de vida",
     cta: "Contáctenos",
   };
 

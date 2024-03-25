@@ -8,10 +8,7 @@ const Footer = () => {
         <Logo />
       </div>
       <div className="footer__copy">
-        <p>
-          Si tienes problemas poniendote en contacto por nuestros canales, trata
-          de comunicarte por estos medios:
-        </p>
+        <p>Contáctenos también por:</p>
         <p>Teléfono</p>
         <ul>
           <li>
@@ -21,7 +18,7 @@ const Footer = () => {
             <a href="tel:+576023995264">+57 (602) 399 5264</a>
           </li>
         </ul>
-        <p>Correo</p>
+        <p>Correo:</p>
         <a href="mailto:admon.provinciamayor@gmail.com">
           admon.provinciamayor@gmail.com
         </a>

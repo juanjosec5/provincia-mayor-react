@@ -29,7 +29,7 @@ const Services = () => {
       url: "/services#asistencia",
     },
     {
-      text: "Planeación de Alimentos y Dietas",
+      text: "Alimentación",
       icon: mdiFoodDrumstick,
       url: "/services#alimentos",
     },
